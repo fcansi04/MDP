@@ -8,9 +8,9 @@ const useFetch = () => {
   const refetch = async () => {
     setLoading(true);
     try {
-      const corsProxy = "https://cors-anywhere.herokuapp.com/";
+      const corsProxy = "https://api.allorigins.win/raw?url=";
       const targetUrl = "https://cdn.oneri.io/web-team/case/spotify.json";
-      const response = await fetch(corsProxy + targetUrl, {
+      const response = await fetch(corsProxy + encodeURIComponent(targetUrl), {
         headers: {
           Origin: "https://mdp-fci4.vercel.app/",
         },
