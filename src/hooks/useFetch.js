@@ -12,7 +12,7 @@ const useFetch = () => {
       const targetUrl = "https://cdn.oneri.io/web-team/case/spotify.json";
       const response = await fetch(corsProxy + targetUrl, {
         headers: {
-          Origin: "http://localhost:5174",
+          Origin: "https://mdp-fci4.vercel.app/",
         },
       });
 
