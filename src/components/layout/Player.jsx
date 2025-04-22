@@ -17,8 +17,8 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
   const currentSong = {
     title: "One step Beyond",
     artist: "Madness",
-    duration: 138, 
-    currentTime: 0, 
+    duration: 138,
+    currentTime: 0,
   };
 
   const formatTime = (seconds) => {
@@ -34,13 +34,15 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
         bottom: 0,
         left: 0,
         right: 0,
-        height: "90px",
+        height: { xs: "80px", md: "90px" },
+
+        width: "100%",
         backgroundColor: "#282828",
         borderTop: "1px solid #282828",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "0 16px",
+        padding: { xs: "10px 16px", md: "10px 16px" },
         zIndex: 1000,
       }}
     >
@@ -56,7 +58,16 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
           sx={{ width: 56, height: 56, marginRight: 2 }}
         />
         <Box>
-          <Typography variant="body1" sx={{ color: "#fff", fontSize: 14 }}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#fff",
+              fontSize: 14,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
+            }}
+          >
             {currentPlayedSong?.subtitle
               ? currentPlayedSong.subtitle
               : currentSong.title}
@@ -73,11 +84,16 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          width: "40%",
+          alignItems: { xs: "center", md: "center" },
+          width: { xs: "60%", md: "40%" },
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center", marginBottom: 1 }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <IconButton sx={{ color: "#b3b3b3", padding: "8px" }}>
             <SkipPreviousRounded sx={{ fontSize: 20 }} />
           </IconButton>
@@ -104,7 +120,14 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
           </IconButton>
         </Box>
 
-        <Box sx={{ display: "flex", alignItems: "center", width: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <Typography
             sx={{
               color: "#b3b3b3",
@@ -151,7 +174,12 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
       </Box>
 
       <Box
-        sx={{ width: "30%", display: "flex", justifyContent: "flex-end" }}
+        sx={{
+          width: { md: "30%" },
+
+          justifyContent: "flex-end",
+          display: { xs: "none", md: "flex" },
+        }}
       ></Box>
     </Box>
   );
