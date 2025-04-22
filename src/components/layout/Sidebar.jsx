@@ -74,7 +74,7 @@ const Sidebar = ({ fetchData }) => {
               height: "40px",
               paddingLeft: "18px",
               alignItems: "center",
-              borderLeft: isHome ? "3px solid #66D36E" : "3px solid #030303",
+              borderLeft: isHome ? "5px solid #66D36E" : "5px solid #030303",
             }}
           >
             <img src={isHome ? homeFilledIcon : homeIcon} alt="home" />
@@ -103,7 +103,7 @@ const Sidebar = ({ fetchData }) => {
               paddingLeft: "18px",
               alignItems: "center",
 
-              borderLeft: isSearch ? "3px solid #66D36E" : "3px solid #030303",
+              borderLeft: isSearch ? "5px solid #66D36E" : "5px solid #030303",
             }}
           >
             <img
@@ -135,7 +135,7 @@ const Sidebar = ({ fetchData }) => {
               paddingLeft: "18px",
               alignItems: "center",
 
-              borderLeft: isLibrary ? "3px solid #66D36E" : "3px solid #030303",
+              borderLeft: isLibrary ? "5px solid #66D36E" : "5px solid #030303",
             }}
           >
             <img
