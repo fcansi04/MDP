@@ -19,7 +19,7 @@ const MainContent = ({
         background: "linear-gradient(113.83deg, #121212 0.59%, #121212 99.74%)",
         display: "flex",
         flexDirection: "column",
-        gap: "30px",
+        gap: "32px",
         flex: 1,
         padding: { xs: "16px", md: "24px" },
         marginLeft: { xs: "60px", md: "224px" },

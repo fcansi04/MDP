@@ -19,12 +19,7 @@ const Sidebar = ({ fetchData }) => {
   const [isSearch, setIsSearch] = useState(false);
   const [isLibrary, setIsLibrary] = useState(false);
 
-  const xsm = useMediaQuery("(min-width: 400px)");
-  const xsl = useMediaQuery("(min-width: 500px)");
-  const sm = useMediaQuery("(min-width: 600px)");
   const md = useMediaQuery("(min-width: 925px)");
-  const lg = useMediaQuery("(min-width: 1200px)");
-  const xl = useMediaQuery("(min-width: 1536px)");
 
   return (
     <Box

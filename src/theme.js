@@ -22,7 +22,7 @@ const theme = createTheme({
       md: 925,
       lm: 1150,
       lg: 1200,
-      xl: 1300,
+      xl: 1250,
     },
   },
   typography: {
