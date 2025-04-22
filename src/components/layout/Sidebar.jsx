@@ -1,19 +1,19 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import homeIcon from "../assets/Home.svg";
-import homeFilledIcon from "../assets/Home-filled.svg";
+import homeIcon from "../../assets/Home.svg";
+import homeFilledIcon from "../../assets/Home-filled.svg";
 
-import searchIcon from "../assets/Search-small.svg";
-import searchBigIcon from "../assets/Search-Big.svg";
+import searchIcon from "../../assets/Search-small.svg";
+import searchBigIcon from "../../assets/Search-Big.svg";
 
-import libraryIcon from "../assets/Library-small.svg";
-import libraryBigIcon from "../assets/Library-Big.svg";
+import libraryIcon from "../../assets/Library-small.svg";
+import libraryBigIcon from "../../assets/Library-Big.svg";
 
-import spotifyLogo from "../assets/spotifyLogo.svg";
-import spotifyLogoSmall from "../assets/Spotify-logo-icon.svg";
+import spotifyLogo from "../../assets/spotifyLogo.svg";
+import spotifyLogoSmall from "../../assets/Spotify-logo-icon.svg";
 
 import { Margin } from "@mui/icons-material";
 import { useState } from "react";
-import PlayList from "./PlayList";
+import PlayList from "../PlayList";
 const Sidebar = ({ fetchData }) => {
   const [isHome, setIsHome] = useState(true);
   const [isSearch, setIsSearch] = useState(false);

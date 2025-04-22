@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import MainContentHeader from "./MainContentHeader";
-import RecentlyPlayed from "./RecentlyPlayed";
-import Recommended from "./Recommended";
+import MainContentHeader from "../MainContentHeader";
+import RecentlyPlayed from "../RecentlyPlayed";
+import Recommended from "../Recommended";
 import { useState } from "react";
 const MainContent = ({
   fetchData,

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import Sidebar from "./components/Sidebar";
-import MainContent from "./components/MainContent";
-import Player from "./components/Player";
+import Sidebar from "./components/layout/Sidebar";
+import MainContent from "./components/layout/MainContent";
+import Player from "./components/layout/Player";
 import "./index.css";
 import { useState } from "react";
 import useFetch from "./hooks/useFetch";

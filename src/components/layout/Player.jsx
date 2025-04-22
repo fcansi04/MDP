@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, IconButton, Slider, Typography } from "@mui/material";
 
-import PlayIcon from "../assets/Play.svg";
+import PlayIcon from "../../assets/Play.svg";
 
 import PauseRounded from "@mui/icons-material/PauseRounded";
 import PlayArrowRounded from "@mui/icons-material/PlayArrowRounded";
