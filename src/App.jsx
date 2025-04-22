@@ -21,7 +21,7 @@ function App() {
       sx={{
         display: "flex",
         overflow: "hidden",
-        paddingBottom: "90px", // Add padding to accommodate the fixed player at bottom
+        paddingBottom: "90px",
       }}
     >
       <Sidebar fetchData={fetchData} />

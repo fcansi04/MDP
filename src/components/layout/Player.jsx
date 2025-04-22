@@ -17,8 +17,8 @@ const Player = ({ currentPlayedSong, setCurrentPlayedSong }) => {
   const currentSong = {
     title: "One step Beyond",
     artist: "Madness",
-    duration: 138, // in seconds (2:18)
-    currentTime: 0, // 0:00 in seconds
+    duration: 138, 
+    currentTime: 0, 
   };
 
   const formatTime = (seconds) => {
