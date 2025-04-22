@@ -6,7 +6,7 @@ import searchIcon from "../../assets/Search-small.svg";
 import searchBigIcon from "../../assets/Search-Big.svg";
 
 import libraryIcon from "../../assets/Library-small.svg";
-import libraryBigIcon from "../../assets/Library-Big.svg";
+import libraryBigIcon from "../../assets/Library-big.svg";
 
 import spotifyLogo from "../../assets/spotifyLogo.svg";
 import spotifyLogoSmall from "../../assets/Spotify-logo-icon.svg";
